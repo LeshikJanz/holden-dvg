@@ -1,0 +1,155 @@
+@import "~template/assets/variables.scss";
+@import "~template/assets/mixins.scss";
+
+$firstRowTitleHeight: 52px;
+
+@mixin price-title {
+  @include goldenSize($f-godSize);
+  @media (max-width: 768px) {
+    @include goldenSize($f-giantSize);
+  }
+  color: $c-linkActive;
+  font-weight: bold;
+}
+
+.block {
+  margin: -1px;
+}
+
+.component {
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid $c-border, 5%;
+}
+
+.component-item {
+  width: 50%;
+  padding: $padding-base-horizontal $padding-large-horizontal * 2;
+}
+
+.component-item-big {
+  padding: $padding-large-horizontal * 2;
+}
+
+.component-itemFull {
+  @extend .component-item;
+  width: 100%;
+}
+
+.finance {
+  font-size: $f-h3Size;
+  color: $c-darkYellow;
+  font-weight: bold;
+  text-decoration: underline;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.price {
+  /*! keep */
+
+  .price-title {
+    @include price-title;
+    line-height: $firstRowTitleHeight;
+  }
+  .gov-excl {
+    color: $c-linkActive;
+    font-size: $f-smallSize;
+  }
+  .price-subtitle {
+    display: flex;
+  }
+
+  .price-subtitle-title {
+    margin-right: $padding-small-vertical;
+    color: $c-label;
+  }
+
+  .price-subtitle-text {
+    color: $c-eveningsky;
+    font-weight: bold;
+  }
+}
+
+.detail {
+  font-weight: bold;
+
+  .detail-title {
+    color: $c-label;
+    text-transform: uppercase;
+  }
+
+  .detail-subtitle {
+    color: $c-nightsky;
+    font-size: $f-h3Size;
+  }
+}
+
+.border-right {
+  border-right: 1px solid $c-border;
+}
+
+.border-left {
+  border-left: 1px solid $c-border;
+}
+
+.border-top {
+  border-top: 1px solid $c-border;
+}
+
+.border-bottom {
+  border-bottom: 1px solid $c-border;
+}
+.items-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.drive-icon {
+  background: rgba(249, 249, 249, 0) url("../../assets/icons/driveType.png") no-repeat;
+  background-size: cover;
+  width: 11px;
+  height: 11px;
+  margin-bottom: 3px;
+  margin-right: 5px;
+}
+.address-icon {
+  background: rgba(249, 249, 249, 0) url("../../assets/icons/address.png") no-repeat;
+  background-size: cover;
+  width: 9px;
+  height: 11px;
+  margin-bottom: 3px;
+  margin-right: 5px;
+}
+.engine-icon {
+  background: rgba(249, 249, 249, 0) url("../../assets/icons/engine.png") no-repeat;
+  background-size: cover;
+  width: 15px;
+  height: 11px;
+  margin-bottom: 3px;
+  margin-right: 5px;
+}
+.transmission-icon {
+  background: rgba(249, 249, 249, 0) url("../../assets/icons/transmission.png") no-repeat;
+  background-size: cover;
+  width: 14px;
+  height: 15px;
+  margin-bottom: 3px;
+  margin-right: 5px;
+}
+.body-icon {
+  background: rgba(249, 249, 249, 0) url("../../assets/icons/body.png") no-repeat;
+  background-size: cover;
+  width: 12px;
+  height: 12px;
+  margin-bottom: 3px;
+  margin-right: 5px;
+}
+.kilo-icon {
+  background: rgba(249, 249, 249, 0) url("../../assets/icons/kilometres.png") no-repeat;
+  background-size: cover;
+  width: 12px;
+  height: 12px;
+  margin-bottom: 3px;
+  margin-right: 5px;
+}

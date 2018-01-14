@@ -1,0 +1,36 @@
+@import "~template/assets/variables.scss";
+@import "~template/assets/mixins.scss";
+
+.block {
+  @include rounded;
+  border: 1px solid $c-border;
+  height: 60px;
+  padding: 0;
+  background: $c-white;
+}
+
+.component {
+  /*! keep */
+}
+
+.filters {
+  display: flex;
+  align-items: stretch;
+}
+
+.filters-priceFilter {
+  padding: 0 $padding-large-horizontal;
+  border-right: 1px solid $c-border;
+  flex: 1;
+}
+
+.filters-locationFilter {
+  padding: 0 $padding-large-horizontal;
+  border-right: 1px solid $c-border;
+  flex: 1;
+}
+
+.filters-conditionFilter {
+  padding: 0 $padding-large-horizontal;
+  flex: 2;
+}

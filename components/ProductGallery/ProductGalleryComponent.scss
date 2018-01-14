@@ -1,0 +1,19 @@
+@import "~template/assets/variables.scss";
+@import "~template/assets/mixins.scss";
+
+.block {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.component {
+  height: 100%;
+}
+
+.image,
+.image > img {
+  height: 100%;
+}

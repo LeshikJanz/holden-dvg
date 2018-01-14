@@ -1,0 +1,57 @@
+@import "~template/assets/variables.scss";
+@import "~template/assets/mixins.scss";
+
+/**
+ * Mixins
+ */
+@mixin component {
+  padding: $padding-large-horizontal 0;
+}
+
+@mixin componentFold {
+  /*! keep */
+}
+
+@mixin componentUnfold {
+  /*! keep */
+}
+
+/**
+* Styles
+*/
+.block {
+  /*! keep */
+}
+
+.component {
+  @include component;
+}
+
+.componentFolded {
+  @include component;
+  @include componentFold;
+}
+
+.componentUnfolded {
+  @include component;
+  @include componentUnfold;
+}
+
+.tagType {
+  @extend .row;
+}
+
+.tagType-typeSelect {
+  @extend .col-sm-2;
+}
+
+.tagType-tagPreview {
+  @extend .col-sm-10;
+}
+
+.label {
+  color: $c-label;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: $padding-base-horizontal;
+}

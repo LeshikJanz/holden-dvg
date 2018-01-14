@@ -1,0 +1,11 @@
+@import "~template/assets/variables.scss";
+@import "~template/assets/mixins.scss";
+
+.filter {
+  /*! keep */
+}
+
+.filter > select {
+  @include goldenSize($f-h3Size);
+  @include filterInput;
+}

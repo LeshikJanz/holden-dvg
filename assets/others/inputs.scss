@@ -1,0 +1,13 @@
+@mixin input {
+  @include rounded;
+  background: $c-white;
+  border: 2px solid $c-borderThick;
+  color: $c-label;
+  padding: $padding-base-horizontal * 2;
+  font-size: $f-baseSize;
+}
+
+@mixin goldenSize($font-size: 13px) {
+  font-size: $font-size;
+  line-height: $font-size * 1.618;
+}

@@ -1,0 +1,29 @@
+@import "~template/assets/variables.scss";
+@import "~template/assets/mixins.scss";
+
+.block {
+  /*! keep */
+}
+
+.component {
+  /*! keep */
+}
+
+.component-title {
+  margin-bottom: $padding-large-horizontal;
+}
+
+.component-description {
+  /*! keep */
+}
+
+.title {
+  font-size: $f-h1Size;
+  color: $c-titleActive;
+  font-weight: bold;
+}
+
+.description {
+  @include goldenSize($f-h3Size);
+  color: $c-nightsky;
+}

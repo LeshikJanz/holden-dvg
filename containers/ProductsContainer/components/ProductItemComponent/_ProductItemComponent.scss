@@ -1,0 +1,139 @@
+@import "~template/assets/variables.scss";
+@import "~template/assets/mixins.scss";
+
+.block {
+  /*! keep */
+}
+
+.component {
+  @include rounded;
+  border: 1px solid $c-border;
+  overflow: hidden;
+  background: $c-white;
+}
+
+.productHead {
+  position: relative;
+  min-height: 230px;
+}
+
+.productHead-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.productHead-condition {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.productTail {
+  background: $c-white;
+  padding: $padding-large-horizontal;
+}
+
+.productTail-tags {
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 1px solid $c-border;
+  margin-bottom: $padding-base-horizontal;
+
+  & > div {
+    margin-bottom: $padding-base-horizontal;
+  }
+  & > div:not(:last-child) {
+    margin-right: $padding-base-horizontal;
+  }
+}
+
+.productTail-title {
+  margin-bottom: $padding-large-horizontal;
+}
+
+.productTail-description {
+  /*! keep */
+}
+
+.productPrice {
+  padding: $padding-large-horizontal;
+  border-top: 1px solid $c-border;
+  background: $c-white;
+}
+
+.image {
+  & > img {
+    width: 100%;
+  }
+}
+
+.condition {
+  background: $c-white;
+  color: $c-linkActive;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: $padding-small-horizontal $padding-large-horizontal;
+  border-top-right-radius: 4px;
+}
+
+.title {
+  text-transform: uppercase;
+  color: $c-nightsky;
+  font-size: $f-h3Size;
+  font-weight: bold;
+}
+
+.description {
+  & > div:not(:last-child) {
+    margin-bottom: $padding-small-vertical;
+  }
+}
+
+.description-item {
+  display: flex;
+}
+
+.description-item-title {
+  margin-right: $padding-small-vertical;
+  color: $c-label;
+}
+
+.description-item-text {
+  color: $c-eveningsky;
+  display: flex;
+
+  & > span:not(:last-child) {
+    padding-right: $padding-small-vertical;
+  }
+}
+
+@media (max-width: 768px) {
+  .description-item-text {
+    color: $c-eveningsky;
+    display: flex;
+    font-size: $f-smallSize;
+
+    & > span:not(:last-child) {
+      padding-right: $padding-small-vertical;
+    }
+  }
+}
+
+.price {
+  color: $c-linkActive;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .number {
+    font-size: $f-giantSize;
+    font-weight: bold;
+  }
+  .gov-excl {
+    font-size: $f-smallSize;
+  }
+}

@@ -1,0 +1,46 @@
+@import "~template/assets/variables.scss";
+@import "~template/assets/mixins.scss";
+
+/**
+ * Mixins
+ */
+@mixin search {
+  height: 60px;
+}
+
+@mixin searchFold {
+  /*! keep */
+}
+
+/**
+ * Styles
+ */
+.block {
+  max-width: 620px;
+  margin: 0 auto;
+}
+
+.component {
+  position: relative;
+}
+
+.search {
+  @include search;
+}
+
+.searchFolded {
+  @include search;
+  @include searchFold;
+}
+
+.searchUnfolded {
+  @include search;
+}
+
+.autocomplete {
+  /*! keep */
+}
+
+.select {
+  /*! keep */
+}

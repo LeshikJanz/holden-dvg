@@ -1,0 +1,57 @@
+@import "~template/assets/variables.scss";
+@import "~template/assets/mixins.scss";
+
+.block {
+  /*! keep */
+}
+
+.component {
+  div:not(:last-child) {
+    margin-bottom: $padding-base-horizontal;
+  }
+}
+
+.component-title {
+  font-size: $f-h2Size;
+  color: $c-titleActive;
+  text-transform: uppercase;
+}
+
+.component-form {
+  /*! keep */
+}
+
+.form {
+  input,
+  textarea {
+    @include input;
+  }
+
+  div:not(:last-child) {
+    margin-bottom: $padding-base-horizontal;
+  }
+}
+
+.form-namePhone {
+  display: flex;
+  justify-content: space-between;
+  input + input {
+    margin-left: $padding-base-horizontal;
+  }
+}
+
+.form-email {
+  /*! keep */
+}
+
+.form-notification {
+  /*! keep */
+}
+
+.form-message {
+  /*! keep */
+}
+
+.form-button {
+  /*! keep */
+}

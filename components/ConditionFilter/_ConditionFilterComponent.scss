@@ -1,0 +1,28 @@
+@import "~template/assets/variables.scss";
+@import "~template/assets/mixins.scss";
+
+.filter {
+  display: flex;
+}
+
+.filter-item {
+  @include filterInput;
+  @include centerVertically;
+  padding: $padding-base-horizontal;
+  background: $c-white;
+  justify-content: center;
+  min-width: 70px;
+
+  &:not(:last-child) {
+    margin-right: $padding-base-horizontal;
+  }
+}
+
+.filter-itemActive {
+  @extend .filter-item;
+  @include filterInputActivate;
+}
+
+.filter-itemDefault {
+  @extend .filter-item;
+}

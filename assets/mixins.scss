@@ -1,0 +1,33 @@
+@import "others/buttons.scss";
+@import "others/inputs.scss";
+
+@mixin rounded($radius: 4px) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin centerVertically {
+  display: flex;
+  align-items: center;
+}
+
+@mixin containerBlock {
+  width: 1170px;
+}
+
+@mixin filterInput {
+  @include rounded;
+  border: 1px solid $c-borderThick;
+  height: 48px;
+  color: $c-titleActive;
+  font-weight: bold;
+  background: none;
+  cursor: pointer;
+}
+
+@mixin filterInputActivate {
+  border: none;
+  background: $c-selected;
+  color: $c-white;
+}

@@ -1,0 +1,34 @@
+@import "~template/assets/variables.scss";
+@import "~template/assets/mixins.scss";
+
+.block {
+  /*! keep */
+}
+
+.component {
+  /*! keep */
+}
+
+.componentMultiline {
+  @extend .component;
+
+  .component-form {
+    margin-bottom: $padding-large-horizontal;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .component-button{
+    /*! keep */
+  }
+}
+
+.input > input {
+  @include input;
+  width: 100%;
+}
+
+.button > button {
+  @include buttonForm;
+  width: 100%;
+}

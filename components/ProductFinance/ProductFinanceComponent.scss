@@ -1,0 +1,41 @@
+@import "~template/assets/variables.scss";
+@import "~template/assets/mixins.scss";
+
+$firstRowTitleHeight: 52px;
+
+.block {
+  /*! keep */
+}
+
+.component {
+  /*! keep */
+}
+
+.title {
+  height: $firstRowTitleHeight;
+  font-weight: bold;
+}
+
+.title-title {
+  color: $c-label;
+  text-transform: uppercase;
+}
+
+.title-text {
+  color: $c-nightsky;
+  font-size: $f-h1Size;
+}
+
+.title-text > small {
+  color: $c-label;
+  font-weight: normal;
+  font-size: $f-smallSize;
+  padding-left: 5px;
+}
+
+.subtitle {
+  font-size: $f-baseSize;
+  text-transform: uppercase;
+  color: $c-darkYellow;
+  cursor: pointer;
+}

@@ -1,0 +1,63 @@
+@import "~template/assets/variables.scss";
+@import "~template/assets/mixins.scss";
+
+@mixin componentFold {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: $c-white;
+  z-index: 2;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.block {
+  /*! keep */
+}
+
+.component {
+  /*! keep */
+}
+
+.foldingWrapper {
+  position: relative;
+}
+
+.component-folded {
+  @include componentFold;
+  @extend .component;
+
+  .searchSelect,
+  .tagType,
+  .filters {
+    margin-bottom: $padding-large-horizontal;
+  }
+}
+
+.component-unfolded {
+  @extend .component;
+
+  .searchSelect,
+  .tagType,
+  .tagSelect,
+  .filters {
+    margin-bottom: $padding-large-horizontal * 2;
+  }
+
+  .tagSelect {
+    border-top: 1px solid $c-border;
+    border-bottom: 1px solid $c-border;
+  }
+}
+
+
+.products {
+  margin-top: $padding-large-horizontal;
+}
+
+.loadMore {
+  text-align: center;
+  button {
+    /*! keep */
+  }
+}

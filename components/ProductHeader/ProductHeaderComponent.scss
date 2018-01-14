@@ -1,0 +1,25 @@
+@import "~template/assets/variables.scss";
+@import "~template/assets/mixins.scss";
+
+.block {
+  @include rounded;
+  background: $c-white;
+  padding: $padding-large-horizontal;
+}
+
+.component {
+  display: flex;
+  justify-content: space-between;
+}
+
+.component-left {
+  @include centerVertically;
+}
+
+.component-right {
+  @include centerVertically;
+}
+
+.button {
+  @include buttonHeader;
+}

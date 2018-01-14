@@ -1,0 +1,32 @@
+@import "~template/assets/variables.scss";
+@import "~template/assets/mixins.scss";
+
+.block {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.component {
+  display: flex;
+  overflow-x: scroll;
+}
+
+.component-item {
+  /*! keep */
+}
+
+.component-item:not(:last-child) {
+  margin-right: 1px;
+}
+
+.thumb {
+  width: 230px;
+  height: 100%;
+}
+
+.thumb > img {
+  width: 100%;
+}

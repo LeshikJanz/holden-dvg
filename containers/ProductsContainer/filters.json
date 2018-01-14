@@ -1,0 +1,60 @@
+{
+  "TransmissionType": [
+    "Sports Automatic",
+    "Manual",
+    "Constantly Variable Transmission",
+    "Automatic",
+    "Sports Automatic Dual Clutch",
+    "Sports Automatic Single Clutch",
+    "Automatic Overdrive",
+    "Manual Overdrive",
+    "Seq. Manual Auto-Single Clutch"
+  ],
+  "Fuel": [
+    "Unleaded",
+    "Premium Unleaded",
+    "Diesel",
+    "LPG only"
+  ],
+  "DriveType": [
+    "Front",
+    "4x4",
+    "Rear",
+    "4WD",
+    "4x2"
+  ],
+  "Cylinders": [
+    4.0,
+    6.0,
+    8.0,
+    3.0,
+    5.0
+  ],
+  "GenericColour": [
+    "BLACK",
+    "Black",
+    "Blue",
+    "Silver",
+    "Red",
+    "White",
+    "Grey",
+    "Brown",
+    "Orange",
+    "Beige",
+    "Yellow",
+    "Green",
+    "WHITE",
+    "GREY",
+    "BLUE",
+    "RED",
+    "MAROON",
+    "Purple",
+    "burgundy",
+    "SILVER",
+    "Gold",
+    "Bronze",
+    "BRONZE",
+    "GOLD",
+    "white"
+  ]
+}

@@ -1,0 +1,33 @@
+@import "~template/assets/variables.scss";
+@import "~template/assets/mixins.scss";
+
+.block {
+  /*! keep */
+}
+
+.component {
+  @include centerVertically;
+  display: flex;
+  cursor: pointer;
+}
+
+.component-logo {
+  margin-right: $padding-base-horizontal;
+
+  > img {
+    max-width: none;
+  }
+
+  @media (max-width: 480px) {
+    display: none;
+  }
+}
+
+.component-text {
+  width: 240px;
+  font-size: $f-h3Size;
+  color: $c-darkYellow;
+  font-weight: bold;
+  text-decoration: underline;
+  text-transform: uppercase;
+}

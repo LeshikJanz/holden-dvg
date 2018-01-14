@@ -1,0 +1,96 @@
+@import "~template/assets/variables.scss";
+@import "~template/assets/mixins.scss";
+
+.block {
+  /*! keep */
+}
+
+.component {
+  /*! keep */
+}
+
+.componentDisabled {
+  @extend .component;
+  position: relative;
+}
+
+.componentDefault {
+  @extend .component;
+}
+
+.disableOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.select {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.select-item {
+  width: calc(100% / 6);
+  text-align: center;
+  border: 1px solid $c-border;
+  background: $c-white;
+  cursor: pointer;
+}
+
+.select-itemDefault {
+  @extend .select-item;
+  color: $c-titleActive;
+  &:hover {
+    background: darken($c-white, 4%);
+    color: darken($c-titleActive, 4%);
+  }
+}
+
+.select-itemActive {
+  @extend .select-item;
+  color: $c-white;
+  background: lighten($c-linkActive, 30%);
+}
+
+.select:first-child > .select-item,
+.select + .select > .select-item, {
+  border-top: 0;
+}
+
+.select-item + .select-item {
+  border-left: 0;
+}
+
+.select:last-child > .select-item:first-child {
+  border-bottom-left-radius: 4px;
+}
+
+.select:last-child > .select-item:last-child {
+  border-bottom-right-radius: 4px;
+}
+
+.select:first-child > .select-item > .carthumb {
+  /* Recompensation for negative margin of 4px in SearchSelectComponent */
+  padding-top: $padding-large-horizontal * 2 + 4px;
+}
+
+.carthumb {
+  padding: $padding-large-horizontal * 2 $padding-large-horizontal;
+  font-weight: bold;
+}
+
+.carthumb-title {
+  /*! keep */
+}
+
+.carthumb-icon {
+  margin-bottom: $padding-base-horizontal;
+  height: 38px;
+}
+
+.carthumb-icon > img {
+  max-height: 100%;
+}

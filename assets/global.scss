@@ -1,0 +1,25 @@
+:global {
+  #root {
+    textarea:hover,
+    input:hover,
+    select:hover,
+    textarea:active,
+    input:active,
+    select:active,
+    textarea:focus,
+    input:focus,
+    select:focus,
+    button:focus,
+    button:active,
+    button:hover,
+    label:focus,
+    .btn:active,
+    .btn.active
+    {
+        outline: 0px !important;
+        -webkit-appearance: none !important;
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+    }
+  }
+}

@@ -1,0 +1,54 @@
+@import "~template/assets/variables.scss";
+@import "~template/assets/mixins.scss";
+
+.block {
+  background: #fafafa;
+}
+
+.component {
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid $c-border, 5%;
+}
+
+.component-item {
+  width: 50%;
+  padding: $padding-base-horizontal $padding-large-horizontal * 2;
+}
+
+.component-item-big {
+  padding: $padding-large-horizontal * 2;
+}
+
+.component-itemFull {
+  @extend .component-item;
+  width: 100%;
+}
+
+.detail {
+  font-weight: bold;
+
+  .detail-title {
+    color: $c-label;
+    text-transform: uppercase;
+  }
+
+  .detail-subtitle {
+    color: $c-nightsky;
+    font-size: $f-h3Size;
+  }
+}
+
+.items-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.address-icon {
+  background: rgba(249, 249, 249, 0) url("../../assets/icons/address.png") no-repeat;
+  background-size: cover;
+  width: 9px;
+  height: 11px;
+  margin-bottom: 3px;
+  margin-right: 5px;
+}

@@ -1,0 +1,216 @@
+{
+  "TransmissionType:Automatic": {
+    "title": "Automatic",
+    "key": "TransmissionType",
+    "color": "pink",
+    "values": [
+      "Sports Automatic",
+      "Constantly Variable Transmission",
+      "Automatic",
+      "Sports Automatic Dual Clutch",
+      "Sports Automatic Single Clutch",
+      "Automatic Overdrive",
+      "Seq. Manual Auto-Single Clutch"
+    ]
+  },
+  "TransmissionType:Manual": {
+    "title": "Manual",
+    "key": "TransmissionType",
+    "color": "pink",
+    "values": [
+      "Manual",
+      "Manual Overdrive"
+    ]
+  },
+
+  "Fuel:Diesel": {
+    "title": "Diesel",
+    "key": "Fuel",
+    "color": "blue",
+    "values": [
+      "Diesel"
+    ]
+  },
+  "Fuel:Petrol": {
+    "title": "Petrol",
+    "key": "Fuel",
+    "color": "blue",
+    "values": [
+      "Unleaded",
+      "Premium Unleaded"
+    ]
+  },
+  "Fuel:LPG": {
+    "title": "LPG",
+    "key": "Fuel",
+    "color": "blue",
+    "values": [
+      "LPG only"
+    ]
+  },
+
+  "DriveType:AWD/4WD": {
+    "title": "AWD/4WD",
+    "key": "DriveType",
+    "color": "orange",
+    "values": [
+      "4x4",
+      "4WD"
+    ]
+  },
+
+  "Cylinders:4 Cylinders": {
+    "title": "4 Cylinders",
+    "key": "Cylinders",
+    "color": "green",
+    "values": [
+      3,
+      4
+    ]
+  },
+  "Cylinders:6 Cylinders": {
+    "title": "6 Cylinders",
+    "key": "Cylinders",
+    "color": "green",
+    "values": [
+      6
+    ]
+  },
+  "Cylinders:8 Cylinders": {
+    "title": "8 Cylinders",
+    "key": "Cylinders",
+    "color": "green",
+    "values": [
+      8
+    ]
+  },
+
+  "GenericColour:Black": {
+    "title": "Black",
+    "key": "GenericColour",
+    "color": "asphalt",
+    "values": [
+      "Black"
+    ]
+  },
+  "GenericColour:Blue": {
+    "title": "Blue",
+    "key": "GenericColour",
+    "color": "asphalt",
+    "values": [
+      "Blue"
+    ]
+  },
+  "GenericColour:Silver": {
+    "title": "Silver",
+    "key": "GenericColour",
+    "color": "asphalt",
+    "values": [
+      "Silver"
+    ]
+  },
+  "GenericColour:Red": {
+    "title": "Red",
+    "key": "GenericColour",
+    "color": "asphalt",
+    "values": [
+      "Red"
+    ]
+  },
+  "GenericColour:White": {
+    "title": "White",
+    "key": "GenericColour",
+    "color": "asphalt",
+    "values": [
+      "White"
+    ]
+  },
+  "GenericColour:Grey": {
+    "title": "Grey",
+    "key": "GenericColour",
+    "color": "asphalt",
+    "values": [
+      "Grey"
+    ]
+  },
+  "GenericColour:Brown": {
+    "title": "Brown",
+    "key": "GenericColour",
+    "color": "asphalt",
+    "values": [
+      "Brown"
+    ]
+  },
+  "GenericColour:Orange": {
+    "title": "Orange",
+    "key": "GenericColour",
+    "color": "asphalt",
+    "values": [
+      "Orange"
+    ]
+  },
+  "GenericColour:Beige": {
+    "title": "Beige",
+    "key": "GenericColour",
+    "color": "asphalt",
+    "values": [
+      "Beige"
+    ]
+  },
+  "GenericColour:Yellow": {
+    "title": "Yellow",
+    "key": "GenericColour",
+    "color": "asphalt",
+    "values": [
+      "Yellow"
+    ]
+  },
+  "GenericColour:Green": {
+    "title": "Green",
+    "key": "GenericColour",
+    "color": "asphalt",
+    "values": [
+      "Green"
+    ]
+  },
+  "GenericColour:Maroon": {
+    "title": "Maroon",
+    "key": "GenericColour",
+    "color": "asphalt",
+    "values": [
+      "Maroon"
+    ]
+  },
+  "GenericColour:Purple": {
+    "title": "Purple",
+    "key": "GenericColour",
+    "color": "asphalt",
+    "values": [
+      "Purple"
+    ]
+  },
+  "GenericColour:Burgundy": {
+    "title": "Burgundy",
+    "key": "GenericColour",
+    "color": "asphalt",
+    "values": [
+      "Burgundy"
+    ]
+  },
+  "GenericColour:Gold": {
+    "title": "Gold",
+    "key": "GenericColour",
+    "color": "asphalt",
+    "values": [
+      "Gold"
+    ]
+  },
+  "GenericColour:Bronze": {
+    "title": "Bronze",
+    "key": "GenericColour",
+    "color": "asphalt",
+    "values": [
+      "Bronze"
+    ]
+  }
+}

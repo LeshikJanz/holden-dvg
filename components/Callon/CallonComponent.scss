@@ -1,0 +1,59 @@
+@import "~template/assets/variables.scss";
+@import "~template/assets/mixins.scss";
+
+@mixin callon {
+  @include goldenSize($f-baseSize);
+  color: $c-linkActive;
+  font-weight: bold;
+}
+
+@mixin number {
+  @include goldenSize($f-h1Size);
+  color: $c-linkActive;
+  font-weight: bold;
+}
+
+.block {
+  /*! keep */
+}
+
+.component {
+  @include centerVertically;
+  justify-content: center;
+}
+
+.component-callon {
+  @include callon;
+  padding-right: $padding-base-horizontal;
+  width: 120px;
+  @media (max-width: 480px) {
+    display: none;
+  }
+}
+
+.component-number {
+  @include number;
+  padding-left: $padding-base-horizontal;
+
+  & a {
+    @include number;
+  }
+}
+
+.call-icon {
+  background: rgba(249, 249, 249, 0) url("../../assets/icons/call.png") no-repeat;
+  background-size: cover;
+  width: 29px;
+  height: 29px;
+  margin-bottom: 3px;
+  margin-right: 5px;
+  @media (max-width: 480px) {
+    display: none;
+  }
+}
+
+.items-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}

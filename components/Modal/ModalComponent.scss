@@ -1,0 +1,36 @@
+@import "~template/assets/variables.scss";
+@import "~template/assets/mixins.scss";
+
+.base {
+  @include rounded;
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  right: 40px;
+  overflow: auto;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  outline: none;
+  max-height: 90vh;
+}
+
+.afterOpen {
+  z-index: 5;
+  border: 1px solid $c-border;
+  background: $c-bodyBackground;
+  max-width: 620px;
+  margin: 0 auto;
+}
+
+.beforeClose {
+  /*! keep */
+}
+
+.overlayBase {
+  background: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}

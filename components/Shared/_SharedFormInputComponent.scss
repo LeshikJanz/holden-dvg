@@ -1,0 +1,19 @@
+@import "~template/assets/variables.scss";
+@import "~template/assets/mixins.scss";
+
+.ProductContactInput {
+  box-sizing: border-box;
+
+  &-input > input{
+    @include input;
+    width: 100%;
+  }
+  &-inputError > input {
+    @include input;
+    width: 100%;
+    border: 2px solid red !important;
+  }
+  &-error {
+    /*! keep */
+  }
+}
