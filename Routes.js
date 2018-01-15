@@ -7,7 +7,6 @@ import 'template/assets/typography.scss';
 import LayoutContainer from 'template/containers/LayoutContainer';
 import ProductsContainer from 'template/containers/ProductsContainer';
 import ProductViewContainer from 'template/containers/ProductViewContainer';
-import NotFoundContainer from 'containers/NotFoundContainer';
 import DashboardCategoriesContainer from 'template/containers/DashboardCategoriesContainer';
 import DashboardCategoriseContainer from 'template/containers/DashboardCategoriseContainer';
 import DashboardFunnelsContainer from 'template/containers/DashboardFunnelsContainer';
@@ -37,6 +36,7 @@ const Routes = ({ history }) => (
       <Route exact path="/products/:id" component={ProductViewContainer} />
 
       <Route exact path="/dashboard/auth" component={DashboardAuthContainer} />
+
       <DashboardContainer>
         <Route exact path="/dashboard/categories" component={DashboardCategoriesContainer} />
         <Route exact path="/dashboard/categorise" component={DashboardCategoriseContainer} />
@@ -48,10 +48,9 @@ const Routes = ({ history }) => (
         <Route exact path="/dashboard/groups/:id" component={DashboardEditGroupContainer} />
 
         <Route exact path="/dashboard/enquiries" component={DashboardEnquiriesContainer} />
-      </DashboardContainer>
 
-      <Route exact path="/404" component={NotFoundContainer} />
-      <Redirect from="*" to="/404" />
+        <Redirect from="*" to="/" />
+      </DashboardContainer>
     </Switch>
   </LayoutContainer>
 );
