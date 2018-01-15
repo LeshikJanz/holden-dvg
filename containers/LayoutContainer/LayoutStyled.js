@@ -9,7 +9,7 @@ export const Block = styled.div`
 export const Header = styled.div`
   width: 100%;
   min-width: 1400px;
-  min-height: 100px;
+  height: 25%;
   background-repeat: no-repeat;
   background-size: contain;
   background-image: url(${bgHeader});
