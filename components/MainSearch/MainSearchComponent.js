@@ -2,12 +2,16 @@ import React, { PropTypes } from 'react';
 import * as MainSearchStyled from 'template/components/MainSearch/MainSearchStyled';
 import throttle from 'lodash/throttle';
 
+let typingTimer;
+const doneTypingInterval = 750;
+
 class MainSearchComponent extends React.Component {
   constructor(props) {
     super(props);
     this.getProductSuggestRequest = throttle(this.props.getProductSuggestRequest, 300);
     this.focusTextInput = this.focusTextInput.bind(this);
     this.onMainSearchChange = this.onMainSearchChange.bind(this);
+    this.handleRequestTimer = this.handleRequestTimer.bind(this);
     this.state = { search: '' };
   }
 
@@ -21,7 +25,7 @@ class MainSearchComponent extends React.Component {
       nextState.search.length &&
       nextState.search !== nextProps.productMakeModel
     ) {
-      this.getProductSuggestRequest({ search: nextState.search, onComplete: this.focusTextInput });
+      this.handleRequestTimer(nextState.search);
     }
 
     if (!nextState.search.length) {
@@ -33,6 +37,13 @@ class MainSearchComponent extends React.Component {
     this.props.idleProductSearch();
     this.setState({ search: event.target.value });
   }
+
+  handleRequestTimer(search) {
+    clearTimeout(typingTimer);
+    typingTimer = setTimeout(
+      () => this.getProductSuggestRequest({ search, onComplete: this.focusTextInput }),
+      doneTypingInterval);
+  };
 
   focusTextInput() {
     // Explicitly focus the text input
@@ -46,10 +57,12 @@ class MainSearchComponent extends React.Component {
           <MainSearchStyled.Search>
             <input
               type="text"
-              placeholder="I want a... (eg. Skoda Fabia)"
+              placeholder="Search for make or model"
               value={this.state.search}
               onChange={this.onMainSearchChange}
-              ref={(input) => { this.textInput = input; }}
+              ref={(input) => {
+                this.textInput = input;
+              }}
             />
           </MainSearchStyled.Search>
           <MainSearchStyled.Button
@@ -57,7 +70,7 @@ class MainSearchComponent extends React.Component {
             isDisabled={!this.props.productMakeModel || !this.props.productsSearch.isSearchable}
             disabled={!this.props.productMakeModel || !this.props.productsSearch.isSearchable}
           >
-            Search &nbsp; <i className="fa fa-search" />
+            Search &nbsp; <i className="fa fa-search"/>
           </MainSearchStyled.Button>
         </MainSearchStyled.Component>
       </MainSearchStyled.Block>
