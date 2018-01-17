@@ -9,6 +9,7 @@ export const Block = styled.div`
 export const Header = styled.div`
   width: 100%;
   min-width: 1400px;
+  max-height: 150px;
   height: 25%;
   background-repeat: no-repeat;
   background-size: contain;
