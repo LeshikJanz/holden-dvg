@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import * as styles from 'template/styled/styles';
-import bgHeader from 'template/assets/img/cover/header-temp-img.jpg';
+import bgHeader from 'template/assets/img/cover/holden-bg.jpg';
 
 export const Block = styled.div`
   background: transparent;
@@ -8,9 +8,8 @@ export const Block = styled.div`
 
 export const Header = styled.div`
   width: 100%;
-  min-width: 1400px;
-  max-height: 150px;
-  height: 25%;
+  max-height: 220px;
+  height: 100%;
   background-repeat: no-repeat;
   background-size: contain;
   background-image: url(${bgHeader});
