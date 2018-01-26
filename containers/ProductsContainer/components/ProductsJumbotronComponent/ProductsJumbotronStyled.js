@@ -1,7 +1,7 @@
 import * as styles from 'template/styled/styles';
 import styled from 'styled-components';
-import bgImage from 'template/assets/img/cover/skoda-bg.jpg';
-import bgSkodaCover from 'template/assets/img/cover/skoda-bg-cover.png';
+import bgImage from 'template/assets/img/cover/holden-bg.jpg';
+import bgHoldenCover from 'template/assets/img/cover/holden-bg-cover.png';
 import bgImageSpecial from 'template/assets/img/cover/cover-special.jpg';
 
 export const Component = styled.div`
@@ -18,7 +18,7 @@ export const Jumbotron = styled.div`
   background-size: cover;
   padding: calc(${styles.paddingLargeHorizontal} * 3);
   padding-bottom: 180px;
-  background-image: url(${bgSkodaCover});
+  background-image: url(${bgHoldenCover});
   
   ${props => props.background && props.background.length && `
     background-image: url(${bgImageSpecial});

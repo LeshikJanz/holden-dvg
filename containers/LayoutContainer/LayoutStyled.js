@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import * as styles from 'template/styled/styles';
-import bgHeader from 'template/assets/img/cover/holden-bg.jpg';
+import bgHeader from 'template/assets/img/cover/holden-bg-header.jpg';
 
 export const Block = styled.div`
   background: transparent;
