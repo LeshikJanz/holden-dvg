@@ -52,7 +52,7 @@ export const Button = styled.button`
   height: 100%;
   background: #fff;
   font-size: ${styles.h2Size};
-  color: #4ba82e;
+  color: #dc0000;
   font-weight: bold;
   text-transform: uppercase;
   padding: 0 calc(${styles.paddingLargeHorizontal} * 2);

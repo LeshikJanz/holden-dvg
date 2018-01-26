@@ -45,6 +45,7 @@ export const MobileCondition = styled.div`
   @media (max-width: 768px) {
     display: flex;
     align-items: center;
+    background-color: #fff;
     zoom: 0.8;
   }
 `;

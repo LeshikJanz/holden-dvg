@@ -5,6 +5,8 @@ import layoutHoc from 'template/containers/LayoutContainer/layoutHoc';
 
 const LayoutContainer = ({ children, appConfig }) =>
   <LayoutStyled.Block>
+    <LayoutStyled.LeftDrop />
+    <LayoutStyled.RightDrop />
     <LayoutStyled.Component>
       <LayoutStyled.Header />
       <LayoutStyled.Content>

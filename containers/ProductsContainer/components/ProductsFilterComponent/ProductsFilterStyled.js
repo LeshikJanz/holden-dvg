@@ -8,7 +8,7 @@ export const Component = styled.div`
 `;
 
 export const MobileTopScroll = styled.button`
-  background: #4da947;
+  background: #dc0000;
   display: block;
   position: fixed;
   padding: ${styles.paddingBaseHorizontal};
