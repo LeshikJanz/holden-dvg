@@ -33,7 +33,7 @@ export const RightDrop = styled.div`
   position: fixed;
   right: 0;
   z-index: -1;
-  min-width: 300px;
+  width: 20%;
   height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
