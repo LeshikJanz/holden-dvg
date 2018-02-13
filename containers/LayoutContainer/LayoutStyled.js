@@ -20,7 +20,7 @@ export const Header = styled.div`
 
 export const LeftDrop = styled.div`
   position: fixed;
-  left: 0;
+  right: 10%;
   width: 100%;
   z-index: -1;
   height: 100%;
@@ -31,12 +31,12 @@ export const LeftDrop = styled.div`
 
 export const RightDrop = styled.div`
   position: fixed;
-  right: 0;
+  left: 86%;
   z-index: -1;
-  width: 20%;
+  width: 100%;
   height: 100%;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-image: url(${bgRight});
 `;
 
