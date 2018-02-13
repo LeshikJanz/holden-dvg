@@ -6,5 +6,6 @@ export const Component = styled.div`
 `;
 
 export const Products = styled.div`
-  margin-top: ${styles.paddingLargeHorizontal};
+  padding-top: ${styles.paddingLargeHorizontal};
+  background: #fff;
 `;

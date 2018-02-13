@@ -19,7 +19,7 @@ export const Header = styled.div`
 `;
 
 export const LeftDrop = styled.div`
-  position: absolute;
+  position: fixed;
   left: 0;
   width: 100%;
   z-index: -1;
@@ -30,7 +30,7 @@ export const LeftDrop = styled.div`
 `;
 
 export const RightDrop = styled.div`
-  position: absolute;
+  position: fixed;
   right: 0;
   z-index: -1;
   min-width: 300px;
