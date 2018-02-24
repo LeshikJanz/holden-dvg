@@ -59,7 +59,7 @@ export const ColourFilter = styled.div`
 `;
 
 export const LocationFilter = styled.div`
-  width: 140px;
+  width: 150px;
   ${mixins.responsiveMixin().tablet`
     width: 80px;
   `}

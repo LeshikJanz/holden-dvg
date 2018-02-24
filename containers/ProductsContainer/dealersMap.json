@@ -1,38 +1,14 @@
 {
-  "burswood": {
-    "title": "DVG Burswood"
+  "phoenix": {
+    "title": "Phoenix: 10813"
   },
-  "goldymidland": {
-    "title": "DVG Goldy Midland"
+  "clarkson": {
+    "title": "Clarkson: 11348"
   },
-  "maddington": {
-    "title": "DVG Maddington"
+  "wjcd": {
+    "title": "WJCD: 11046"
   },
-  "melvillevolkswagen": {
-    "title": "DVG Melville Volkswagen"
-  },
-  "melvillehyundai": {
-    "title": "DVG Melville Hyundai"
-  },
-  "midlandnissan": {
-    "title": "DVG Midland Nissan"
-  },
-  "midlandhyundai": {
-    "title": "DVG Midland Hyundai"
-  },
-  "morley": {
-    "title": "DVG Morley"
-  },
-  "wanneroo": {
-    "title": "DVG Wanneroo"
-  },
-  "midlandtoyota": {
-    "title": "DVG Midland Toyota"
-  },
-  "canningvale": {
-    "title": "DVG P.Canningvale"
-  },
-  "gosnells": {
-    "title": "DVG P.Gosnells"
+  "renault": {
+    "title": "Renault: 51366"
   }
 }
