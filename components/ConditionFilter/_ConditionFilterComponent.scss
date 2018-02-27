@@ -23,6 +23,13 @@
   @include filterInputActivate;
 }
 
+.filter-itemDisabled {
+  background: lightgray;
+  cursor: not-allowed;
+  pointer-events: none;
+  color: gray;
+}
+
 .filter-itemDefault {
   @extend .filter-item;
 }

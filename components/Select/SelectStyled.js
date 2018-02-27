@@ -20,6 +20,13 @@ export const Select = styled.div`
   display: flex;
   align-items: center;
   padding: ${styles.paddingBaseHorizontal};
+      
+  ${props => props.disabled && `
+    background: lightgray;
+    pointer-events: none;
+    cursor: not-allowed;
+    color: gray;
+  `}
 `;
 
 export const Icon = styled.div`

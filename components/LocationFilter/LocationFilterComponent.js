@@ -17,6 +17,7 @@ const dropdown = reduce({ default: { title: 'All Locations' }, ...dealersMap }, 
 const LocationFilterComponent = ({ productsLocation, updateProductLocation }) => (
   <div styleName="filter">
     <SelectComponent
+      disabled
       onChange={updateProductLocation}
       defaultValue={productsLocation}
       items={dropdown}

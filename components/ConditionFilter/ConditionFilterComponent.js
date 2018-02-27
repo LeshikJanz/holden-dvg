@@ -7,6 +7,7 @@ const ConditionFilterComponent = ({ productsCondition, updateProductCondition })
   const newStyle = cx({
     'filter-itemDefault': !productsCondition.includes('new'),
     'filter-itemActive': productsCondition.includes('new'),
+    'filter-itemDisabled': true,
   });
   const usedStyle = cx({
     'filter-itemDefault': !productsCondition.includes('used'),
@@ -19,6 +20,7 @@ const ConditionFilterComponent = ({ productsCondition, updateProductCondition })
   const demoStyle = cx({
     'filter-itemDefault': !productsCondition.includes('demo'),
     'filter-itemActive': productsCondition.includes('demo'),
+    'filter-itemDisabled': true,
   });
   return (
     <div styleName="filter">
@@ -30,7 +32,6 @@ const ConditionFilterComponent = ({ productsCondition, updateProductCondition })
   );
 };
 
-ConditionFilterComponent.propTypes = {
-};
+ConditionFilterComponent.propTypes = {};
 
 export default css(ConditionFilterComponent, styles);

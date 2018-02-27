@@ -3,9 +3,9 @@ import * as SelectStyled from 'template/components/Select/SelectStyled';
 import hoc from 'template/components/Select/hoc';
 import map from 'lodash/map';
 
-const Select = ({ children, onClick, defaultValue, isVisible, onVisibilityToggle, items }) => items ? (
+const Select = ({ children, onClick, defaultValue, isVisible, onVisibilityToggle, items, disabled }) => items ? (
   <SelectStyled.Component>
-    <SelectStyled.Select  onClick={onVisibilityToggle}>
+    <SelectStyled.Select disabled={disabled} onClick={onVisibilityToggle}>
       <SelectStyled.SelectItem>{items[defaultValue].value}</SelectStyled.SelectItem>
       <SelectStyled.SelectDropdown isVisible={isVisible}>
         {map(items, (item, key) =>

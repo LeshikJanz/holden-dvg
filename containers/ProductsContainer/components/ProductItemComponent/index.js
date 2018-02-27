@@ -5,7 +5,6 @@ import { TagItemCompactComponent } from 'template/components/TagItem/index';
 import ProductGalleryComponent from 'template/components/ProductGallery/ProductGalleryComponent';
 import { roundEngineSize, roundProductPrice } from 'template/utils/index';
 import { Link } from 'react-router-dom';
-import isNumber from 'lodash/isNumber';
 import isEmpty from 'lodash/isEmpty';
 
 const ProductItemComponent = ({ product, snippetEnabled }) => {
@@ -49,7 +48,7 @@ const ProductItemComponent = ({ product, snippetEnabled }) => {
               <div styleName="description-item">
                 <div styleName="description-item-title">Engine:</div>
                 <div styleName="description-item-text">
-                  <span>{`${roundEngineSize(product.EngineCapacity)}L`}</span>
+                  <span>{`${product.EngineCapacity}L`}</span>
                   <span>
                   {product.filters.Fuel ?
                     <TagItemCompactComponent
