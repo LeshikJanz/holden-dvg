@@ -27,8 +27,8 @@ export const defaultScroll = (axis) => {
 
 export const isMobile = () => document.body.clientWidth < 768;
 
-export const _generatePhotoThumbsUrl = (photo, product) => `${API_ENDPOINT}/images/${product.StockNumber}/thumbs/${photo.replace(/^.*[\\\/]/, '').split(/[?#]/)[0]}`;
-export const _generatePhotoUrl = (photo, product) => `${API_ENDPOINT}/images/${product.StockNumber}/${photo.replace(/^.*[\\\/]/, '').split(/[?#]/)[0]}`;
+export const generatePhotoThumbsUrl = (photo, product) => `${API_ENDPOINT}/images/${product.StockNumber}/thumbs/${photo.replace(/^.*[\\\/]/, '').split(/[?#]/)[0]}`;
+export const generatePhotoUrl = (photo, product) => `${API_ENDPOINT}/images/${product.StockNumber}/${photo.replace(/^.*[\\\/]/, '').split(/[?#]/)[0]}`;
 
-export const generatePhotoThumbsUrl = (photo, product) => photo;
-export const generatePhotoUrl = (photo, product) => photo;
+export const _generatePhotoThumbsUrl = (photo, product) => photo;
+export const _generatePhotoUrl = (photo, product) => photo;
