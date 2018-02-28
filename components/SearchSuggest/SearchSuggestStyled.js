@@ -22,6 +22,7 @@ export const SuggestItem = styled.div`
 
   &:not(:last-child) {
     border-bottom: 1px solid ${styles.border};
+    color: #858585;
   }
 
   &:hover {
@@ -31,7 +32,7 @@ export const SuggestItem = styled.div`
 
   ${props => parseInt(props.level, 10) === 1 && `
     font-weight: bold;
-    color: #333;
+    color: #333 !important;
   `}
 
   ${mixins.responsiveMixin().tablet`
